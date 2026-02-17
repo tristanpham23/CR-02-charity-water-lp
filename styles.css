@@ -362,3 +362,14 @@ img {
     justify-content: flex-start;
   }
 }
+
+/* Hide everything below the hero (first photo + content) */
+html, body {
+  height: 100%;
+  overflow: hidden; /* disables scrolling */
+}
+
+main,
+footer {
+  display: none;
+}
