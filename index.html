@@ -1,47 +1,123 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>charity: water | Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Help Keep The Story Unfolding</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-left">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">charity: water</span>
         </div>
-    </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
-</body>
+        <h1 class="hero-title">Help keep the story unfolding</h1>
+
+        <p class="hero-subtitle">
+          Every community's story is a visible reminder that, no matter how small, every contribution helps provide
+          clean water to rehydrate the world.
+        </p>
+
+        <div class="donation-box" aria-label="Donation options">
+          <div class="toggle">
+            <button class="toggle-btn is-active" type="button">Once</button>
+            <button class="toggle-btn" type="button">Monthly</button>
+          </div>
+
+          <div class="donate-row">
+            <label class="amount-field">
+              <span class="sr-only">Donation amount</span>
+              <span class="currency" aria-hidden="true">$</span>
+              <input type="number" min="1" step="1" placeholder="Support the next chapter" />
+            </label>
+
+            <button class="donate-btn" type="button">Donate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-label="Hero image">
+        <img
+          src="https://images.unsplash.com/photo-1520975958221-82f9f933f25f?auto=format&fit=crop&w=1200&q=60"
+          alt="Placeholder photo"
+        />
+      </div>
+    </header>
+
+    <main>
+      <!-- STORY SECTION -->
+      <section class="story" aria-label="Story section">
+        <div class="container story-grid">
+          <div class="story-text">
+            <h2 class="section-title">A story you can follow</h2>
+            <p class="section-copy">
+              Clean water changes everything. This is where you share short updates about communities, what the
+              project is, and what progress looks like over time.
+            </p>
+            <p class="section-copy">
+              Keep it simple and human. Focus on what changed, who it helped, and what is next.
+            </p>
+          </div>
+
+          <div class="story-cards" aria-label="Story highlights">
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1520975682075-9e16d1a05f58?auto=format&fit=crop&w=900&q=60"
+                alt="Placeholder story image"
+              />
+              <h3 class="card-title">Chapter 1</h3>
+              <p class="card-copy">A quick snapshot of the community and the need.</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=60"
+                alt="Placeholder story image"
+              />
+              <h3 class="card-title">Chapter 2</h3>
+              <p class="card-copy">A progress update that makes impact feel real.</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="https://images.unsplash.com/photo-1544473244-f6895e69ad8b?auto=format&fit=crop&w=900&q=60"
+                alt="Placeholder story image"
+              />
+              <h3 class="card-title">Chapter 3</h3>
+              <p class="card-copy">The result and what changes day to day.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="cta" aria-label="Call to action">
+        <div class="container cta-box">
+          <div class="cta-text">
+            <h2 class="cta-title">Ready to support the next chapter?</h2>
+            <p class="cta-copy">
+              Your gift helps bring clean water to more communities, and it helps keep their stories unfolding.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="cta-btn primary" href="#">Donate now</a>
+            <a class="cta-btn secondary" href="#">Learn more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="footer-text">Made as a beginner HTML/CSS build. Swap in your images and adjust copy as needed.</p>
+      </div>
+    </footer>
+  </body>
 </html>
