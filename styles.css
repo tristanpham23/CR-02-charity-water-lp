@@ -383,3 +383,62 @@ main,
 footer {
   display: none;
 }
+
+/* Interactive polish: subtle transitions and hover effects */
+.brand-logo {
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+.brand-logo:hover,
+.brand-logo:focus {
+  transform: scale(1.05);
+}
+
+.toggle-btn {
+  transition: background-color 180ms ease, transform 120ms ease, box-shadow 180ms ease;
+}
+.toggle-btn:hover,
+.toggle-btn:focus {
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.375rem 1.125rem rgba(15, 23, 42, 0.08);
+}
+
+.toggle-btn:focus-visible,
+.donate-btn:focus-visible,
+.cta-btn:focus-visible {
+  outline: 3px solid rgba(255, 210, 120, 0.6);
+  outline-offset: 4px;
+}
+
+.donate-btn {
+  transition: transform 120ms ease, box-shadow 180ms ease, filter 120ms ease;
+}
+.donate-btn:hover,
+.donate-btn:focus {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.625rem 1.5rem rgba(15, 23, 42, 0.12);
+  filter: brightness(0.98);
+}
+
+.card {
+  transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms ease;
+}
+.card:hover,
+.card:focus-within {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.125rem 2rem rgba(15, 23, 42, 0.08);
+}
+.card img {
+  transition: transform 350ms ease;
+}
+.card:hover img {
+  transform: scale(1.035);
+}
+
+.cta-btn {
+  transition: transform 120ms ease, box-shadow 180ms ease, filter 120ms ease;
+}
+.cta-btn:hover,
+.cta-btn:focus {
+  transform: translateY(-0.1875rem);
+  box-shadow: 0 0.75rem 1.5rem rgba(15, 23, 42, 0.08);
+}
