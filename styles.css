@@ -11,12 +11,14 @@
 
   --accent-yellow: #ffd400; /* brand mark */
   --btn-peach: #f6b28a;     /* donate button tone */
-  --radius: 16px;
+  --radius: 1rem;
 }
 
 * {
   box-sizing: border-box;
 }
+
+html { font-size: clamp(14px, 1.2vw + 1vh, 20px); }
 
 body {
   margin: 0;
@@ -40,10 +42,10 @@ img {
 /* HERO */
 .hero {
   width: min(1100px, 100%);
-  margin: 28px auto 0;
+  margin: 1.75rem auto 0;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   overflow: hidden;
   box-shadow: var(--shadow);
   background: var(--white);
@@ -51,7 +53,7 @@ img {
 
 .hero-left {
   background: var(--panel);
-  padding: 44px 44px 36px;
+  padding: 2.75rem 2.75rem 2.25rem;
 }
 
 .hero-right {
@@ -72,19 +74,19 @@ img {
 }
 
 .brand-mark {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.1875rem;
   background: var(--accent-yellow);
 }
 
 .brand-name {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* Hero text */
 .hero-title {
-  margin: 18px 0 10px;
+  margin: 1.125rem 0 0.625rem;
   color: var(--white);
   font-size: clamp(34px, 4vw, 54px);
   line-height: 1.05;
@@ -93,36 +95,36 @@ img {
 }
 
 .hero-subtitle {
-  margin: 0 0 18px;
+  margin: 0 0 1.125rem;
   color: rgba(255, 255, 255, 0.92);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.55;
   max-width: 62ch;
 }
 
 /* Donation box */
 .donation-box {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: var(--radius);
-  padding: 16px;
-  max-width: 520px;
+  padding: 1rem;
+  max-width: 32.5rem;
 }
 
 .toggle {
   display: inline-flex;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 0.625rem;
+  margin-bottom: 0.75rem;
 }
 
 .toggle-btn {
   border: 1px solid var(--border);
   background: var(--white);
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
   cursor: pointer;
 }
 
@@ -133,7 +135,7 @@ img {
 .donate-row {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
 }
 
@@ -142,22 +144,22 @@ img {
   align-items: center;
   border: 1px solid var(--border);
   background: var(--white);
-  border-radius: 12px;
-  padding: 10px 12px;
-  min-height: 46px;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  min-height: 2.875rem;
 }
 
 .currency {
   font-weight: 800;
   color: rgba(15, 23, 42, 0.7);
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .amount-field input {
   border: 0;
   outline: none;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.875rem;
   background: transparent;
 }
 
@@ -168,12 +170,12 @@ img {
 .donate-btn {
   border: 0;
   cursor: pointer;
-  padding: 12px 18px;
-  border-radius: 12px;
+  padding: 0.75rem 1.125rem;
+  border-radius: 0.75rem;
   font-weight: 800;
   background: var(--btn-peach);
   color: rgba(15, 23, 42, 0.9);
-  min-height: 46px;
+  min-height: 2.875rem;
 }
 
 .donate-btn:active {
@@ -182,7 +184,7 @@ img {
 
 /* STORY SECTION */
 .story {
-  padding: 56px 0;
+  padding: 3.5rem 0;
 }
 
 .story-grid {
@@ -207,48 +209,48 @@ img {
 .story-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 0.875rem;
 }
 
 .card {
   background: var(--white);
   border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 14px;
+  border-radius: 0.875rem;
   overflow: hidden;
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
 }
 
 .card img {
-  height: 140px;
+  height: 8.75rem;
   object-fit: cover;
 }
 
 .card-title {
-  margin: 12px 12px 6px;
-  font-size: 16px;
+  margin: 0.75rem 0.75rem 0.375rem;
+  font-size: 1rem;
 }
 
 .card-copy {
-  margin: 0 12px 14px;
+  margin: 0 0.75rem 0.875rem;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.45;
 }
 
 /* CTA */
 .cta {
-  padding: 44px 0 70px;
+  padding: 2.75rem 0 4.375rem;
 }
 
 .cta-box {
   background: var(--white);
   border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 18px;
-  padding: 26px;
+  border-radius: 1.125rem;
+  padding: 1.625rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 1.125rem;
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
 }
 
@@ -266,7 +268,7 @@ img {
 
 .cta-actions {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -274,8 +276,8 @@ img {
 .cta-btn {
   text-decoration: none;
   font-weight: 800;
-  border-radius: 12px;
-  padding: 12px 16px;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
   border: 1px solid var(--border);
   color: rgba(15, 23, 42, 0.9);
   background: var(--white);
@@ -293,7 +295,7 @@ img {
 
 /* Footer */
 .footer {
-  padding: 22px 0 34px;
+  padding: 1.375rem 0 2.125rem;
 }
 
 .footer-inner {
@@ -326,11 +328,11 @@ img {
   }
 
   .hero-right {
-    height: 320px;
+    height: 20rem;
   }
 
   .hero-left {
-    padding: 34px 22px 24px;
+    padding: 2.125rem 1.375rem 1.5rem;
   }
 
   .donate-row {
@@ -350,7 +352,7 @@ img {
   }
 
   .card img {
-    height: 180px;
+    height: 11.25rem;
   }
 
   .cta-box {
@@ -363,6 +365,7 @@ img {
   }
 }
 
+/* Hide everything below the hero (first photo + content) */
 /* Hide everything below the hero (first photo + content) */
 html, body {
   height: 100%;
