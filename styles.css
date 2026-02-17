@@ -73,6 +73,13 @@ img {
   color: rgba(15, 23, 42, 0.85);
 }
 
+/* Small header logo (50% smaller) */
+.brand-logo {
+  width: 8rem; /* adjusted per request */
+  height: auto;
+  display: block;
+}
+
 .brand-mark {
   width: 0.875rem;
   height: 0.875rem;
